@@ -1,6 +1,9 @@
 {
   "name": "echo-bot",
   "version": "0.0.0",
+  "scripts" : {
+    "start" : "node ."
+  },
   "description": "An example LINE bot just to echo messages",
   "main": "index.js",
   "dependencies": {
