@@ -34,7 +34,7 @@ function handleEvent(event) {
   // create a echoing text message
   // const echo = { type: 'text', text: "ma men .. "+event.message.text};
 
-  var echo = new client.TextMessageBuilder('hello cuy');
+  var echo = new line.TextMessageBuilder('hello cuy');
   // use reply API
   return client.replyMessage(event.replyToken, echo);
 }
