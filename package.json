@@ -4,6 +4,9 @@
   "scripts" : {
     "start" : "node ."
   },
+  "engines" : {
+    "node" : "8.6.0"
+  },
   "description": "An example LINE bot just to echo messages",
   "main": "index.js",
   "dependencies": {
