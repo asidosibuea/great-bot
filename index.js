@@ -34,23 +34,7 @@ function handleEvent(event) {
   // create a echoing text message
   // const echo = { type: 'text', text: "ma men .. "+event.message.text};
 
-  const kata = { type: 'text', text: event.message.text};
-
-  switch (kata) {
-    case 'cuy':  let echo = {
-      type: 'text', text: "apa cuy? sehat kau? "+event.message
-    };
-      break;
-    case 'sehat lah':  let echo = {
-      type: 'text', text: "apa cuy? "+event.message
-    };
-        break;
-    default: let echo = {
-      type: 'text', text: "sorry ya aku lagi sibuk cuy "+event.message
-    };
-
-  }
-
+  var echo = new client.TextMessageBuilder('hello cuy');
   // use reply API
   return client.replyMessage(event.replyToken, echo);
 }
